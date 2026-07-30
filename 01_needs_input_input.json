@@ -1,0 +1,17 @@
+{
+  "documents": [
+    {
+      "documentId": "local-contract-example",
+      "fileName": "validV2Basic.xml",
+      "url": "https://raw.githubusercontent.com/ZUGFeRD/mustangproject/87380b8e58624df9efdd9c568f6500d53709c165/validator/src/test/resources/validV2Basic.xml"
+    }
+  ],
+  "sourceProfile": "AUTO",
+  "targetSyntax": "UBL",
+  "targetRuleset": "XRECHNUNG_3_0_2_2026_01_31",
+  "overrides": [],
+  "storeConvertedXml": true,
+  "storeExtractedXml": false,
+  "storeTechnicalReports": false,
+  "maxFindingsPerDocument": 20
+}

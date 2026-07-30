@@ -1,0 +1,17 @@
+{
+  "documents": [
+    {
+      "documentId": "local-contract-example",
+      "fileName": "factur-x-extended.xml",
+      "url": "https://raw.githubusercontent.com/ZUGFeRD/mustangproject/87380b8e58624df9efdd9c568f6500d53709c165/library/src/test/resources/factur-x-extended.xml"
+    }
+  ],
+  "sourceProfile": "AUTO",
+  "targetSyntax": "UBL",
+  "targetRuleset": "XRECHNUNG_3_0_2_2026_01_31",
+  "overrides": [],
+  "storeConvertedXml": true,
+  "storeExtractedXml": false,
+  "storeTechnicalReports": false,
+  "maxFindingsPerDocument": 20
+}

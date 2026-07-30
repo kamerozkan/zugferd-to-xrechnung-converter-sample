@@ -1,0 +1,57 @@
+{
+  "contractVersion": "einvoice-suite-result/1.0.0",
+  "actorName": "zugferd-to-xrechnung-converter",
+  "itemId": "local-contract-example",
+  "inputIndex": 0,
+  "fileName": "factur-x-extended.xml",
+  "producedAt": "2026-07-30T09:20:23.934007Z",
+  "processingStatus": "SUCCEEDED",
+  "conformanceStatus": "ACCEPTED",
+  "billable": false,
+  "scope": "SUPPORTED_PROFILE_ASSISTED_CONVERSION",
+  "source": {
+    "container": "XML",
+    "embeddedXmlSha256": "a63bb55b739a5d23ba91cfcd4991c819df7e3058f12837c1da1d91c8ff757b50",
+    "sha256": "a63bb55b739a5d23ba91cfcd4991c819df7e3058f12837c1da1d91c8ff757b50",
+    "sourceKind": "FILE",
+    "standard": {
+      "compatibility": "ZUGFERD_2_X_D16B_COMPATIBLE",
+      "family": "ZUGFERD_FACTUR_X",
+      "profile": "ZUGFERD_EXTENDED",
+      "scenario": "ZUGFeRD 2.5 / Factur-X 1.09 EXTENDED",
+      "version": "2.x"
+    },
+    "syntax": "CII_INVOICE"
+  },
+  "conversion": {
+    "appliedOverrides": [],
+    "engines": [],
+    "missingInputs": [],
+    "sourceSyntax": "CII",
+    "status": "UNSUPPORTED",
+    "targetArtifact": {},
+    "targetRuleset": "XRECHNUNG_3_0_2_2026_01_31",
+    "targetSyntax": "UBL",
+    "upgrade": {
+      "status": "NOT_REQUIRED"
+    }
+  },
+  "sourceValidation": {
+    "conformanceStatus": "ACCEPTED",
+    "container": null,
+    "counts": {
+      "error": 0,
+      "fatal": 0,
+      "information": 0,
+      "warning": 0
+    },
+    "findings": [],
+    "findingsTruncated": false,
+    "profile": "ZUGFERD_EXTENDED"
+  },
+  "artifacts": {},
+  "error": {
+    "code": "EXTENDED_TERMS_OUTSIDE_TARGET_MODEL",
+    "message": "The EXTENDED source contains semantics that cannot be proven transferable to XRechnung"
+  }
+}

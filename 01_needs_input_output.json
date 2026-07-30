@@ -1,0 +1,135 @@
+{
+  "contractVersion": "einvoice-suite-result/1.0.0",
+  "actorName": "zugferd-to-xrechnung-converter",
+  "itemId": "local-contract-example",
+  "inputIndex": 0,
+  "fileName": "validV2Basic.xml",
+  "producedAt": "2026-07-30T09:20:18.429541Z",
+  "processingStatus": "SUCCEEDED",
+  "conformanceStatus": "REJECTED",
+  "billable": false,
+  "scope": "SUPPORTED_PROFILE_ASSISTED_CONVERSION",
+  "source": {
+    "container": "XML",
+    "embeddedXmlSha256": "53d990e38f07a28c49c8e7f8a691db7add4233c4ade92b945876796f5e2792a7",
+    "sha256": "53d990e38f07a28c49c8e7f8a691db7add4233c4ade92b945876796f5e2792a7",
+    "sourceKind": "FILE",
+    "standard": {
+      "compatibility": "ZUGFERD_2_X_D16B_COMPATIBLE",
+      "family": "ZUGFERD_FACTUR_X",
+      "profile": "ZUGFERD_BASIC",
+      "scenario": "ZUGFeRD 2.5 / Factur-X 1.09 BASIC",
+      "version": "2.x"
+    },
+    "syntax": "CII_INVOICE"
+  },
+  "conversion": {
+    "appliedOverrides": [],
+    "engines": [
+      {
+        "diagnosticSha256": "2d5269124749345f05b88bec695471d5086b0c3258c4e29e8aac7f8e5eba7ff5",
+        "errorCount": 0,
+        "name": "phax-en16931-cii2ubl",
+        "sha256": "76f94af1ac31888ce9e112c3a2d8c47e74c00ef9b63dc0a010707f3446558d0a",
+        "version": "3.1.7",
+        "warningCount": 0
+      }
+    ],
+    "missingInputs": [
+      {
+        "allowedOverride": false,
+        "businessTermId": "BG-6",
+        "normalizedPath": null,
+        "reasonCode": "TARGET_REQUIRED_MISSING",
+        "suggestedOverrideTerms": [
+          "BT-41"
+        ],
+        "targetRuleIds": [
+          "BR-DE-2"
+        ],
+        "valueType": "STRING"
+      },
+      {
+        "allowedOverride": true,
+        "businessTermId": "BT-10",
+        "normalizedPath": "/references/buyerReference",
+        "reasonCode": "TARGET_REQUIRED_MISSING",
+        "targetRuleIds": [
+          "BR-DE-15"
+        ],
+        "valueType": "STRING"
+      },
+      {
+        "allowedOverride": true,
+        "businessTermId": "BT-34",
+        "normalizedPath": "/parties/seller/electronicAddress",
+        "reasonCode": "TARGET_REQUIRED_MISSING",
+        "schemeIdRequired": true,
+        "targetRuleIds": [
+          "PEPPOL-EN16931-R020"
+        ],
+        "valueType": "ELECTRONIC_ADDRESS"
+      },
+      {
+        "allowedOverride": true,
+        "businessTermId": "BT-41",
+        "normalizedPath": "/parties/seller/contact/name",
+        "reasonCode": "TARGET_REQUIRED_MISSING",
+        "targetRuleIds": [
+          "BR-DE-2"
+        ],
+        "valueType": "STRING"
+      },
+      {
+        "allowedOverride": true,
+        "businessTermId": "BT-49",
+        "normalizedPath": "/parties/buyer/electronicAddress",
+        "reasonCode": "TARGET_REQUIRED_MISSING",
+        "schemeIdRequired": true,
+        "targetRuleIds": [
+          "PEPPOL-EN16931-R010"
+        ],
+        "valueType": "ELECTRONIC_ADDRESS"
+      }
+    ],
+    "sourceSyntax": "CII",
+    "status": "NEEDS_INPUT",
+    "targetArtifact": {},
+    "targetRuleset": "XRECHNUNG_3_0_2_2026_01_31",
+    "targetSyntax": "UBL",
+    "upgrade": {
+      "status": "NOT_REQUIRED"
+    }
+  },
+  "sourceValidation": {
+    "conformanceStatus": "ACCEPTED",
+    "container": null,
+    "counts": {
+      "error": 0,
+      "fatal": 0,
+      "information": 0,
+      "warning": 0
+    },
+    "findings": [],
+    "findingsTruncated": false,
+    "profile": "ZUGFERD_BASIC"
+  },
+  "artifacts": {},
+  "error": {
+    "code": "TARGET_REQUIRED_TERMS_MISSING",
+    "message": "The source requires explicit target business terms"
+  },
+  "report": {
+    "schema": {
+      "name": "xrechnung-target-conformance-report",
+      "version": "1.0.0"
+    },
+    "overall": "NON_CONFORMANT",
+    "scope": {
+      "legalValidity": "NOT_ASSESSED",
+      "recipientAcceptance": "NOT_ASSESSED",
+      "taxRecognition": "NOT_ASSESSED",
+      "technicalConformance": "EVALUATED"
+    }
+  }
+}

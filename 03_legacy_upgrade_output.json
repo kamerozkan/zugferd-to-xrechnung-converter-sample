@@ -1,0 +1,97 @@
+{
+  "contractVersion": "einvoice-suite-result/1.0.0",
+  "actorName": "zugferd-to-xrechnung-converter",
+  "itemId": "local-contract-example",
+  "inputIndex": 0,
+  "fileName": "ZUGFeRD1-invoice.xml",
+  "producedAt": "2026-07-30T09:20:27.084325Z",
+  "processingStatus": "SUCCEEDED",
+  "conformanceStatus": "ACCEPTED",
+  "billable": false,
+  "scope": "SUPPORTED_PROFILE_ASSISTED_CONVERSION",
+  "source": {
+    "container": "XML",
+    "embeddedXmlSha256": "89ab6da5fbc19e734c66717eca6bc650f92dbf6d2a3e7571755a969bbfcbfd98",
+    "sha256": "89ab6da5fbc19e734c66717eca6bc650f92dbf6d2a3e7571755a969bbfcbfd98",
+    "sourceKind": "FILE",
+    "standard": {
+      "compatibility": "PINNED_UPGRADE_REQUIRED",
+      "family": "ZUGFERD_FACTUR_X",
+      "profile": "ZUGFERD_1_EXTENDED",
+      "scenario": "ZUGFeRD 1.0 EXTENDED / Mustangproject 2.24.0",
+      "version": "1.0"
+    },
+    "syntax": "ZUGFERD_1_CII"
+  },
+  "conversion": {
+    "appliedOverrides": [],
+    "engines": [
+      {
+        "diagnosticSha256": "66a1ea9f24a73d9f223eda1ee43f57a083d94b997e6ce66cc26dd9ee65ff0443",
+        "durationMs": 299,
+        "name": "Mustangproject XMLUpgrader",
+        "semanticIntegrity": "NOT_PROVEN_BY_UPGRADER",
+        "sha256": "e4904ffa0afdce3f5836dceb927c440a05ed5d60386fdd37e17a4b2f7652edbf",
+        "sourceGuideline": "urn:ferd:CrossIndustryDocument:invoice:1p0:extended",
+        "sourceProfile": "EXTENDED",
+        "sourceSha256": "89ab6da5fbc19e734c66717eca6bc650f92dbf6d2a3e7571755a969bbfcbfd98",
+        "sourceVersion": "ZUGFeRD 1.0",
+        "upgradedByteLength": 11224,
+        "upgradedGuideline": "urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended",
+        "upgradedProfile": "EXTENDED",
+        "upgradedSha256": "500f4e834a5b681c46d1702191b7d40a029f1587e06f6ce0e8c9e3cb0be88ac5",
+        "upgradedSyntax": "CII_D16B",
+        "version": "2.24.0"
+      }
+    ],
+    "missingInputs": [],
+    "sourceSyntax": "CII",
+    "status": "UNSUPPORTED",
+    "targetArtifact": {},
+    "targetRuleset": "XRECHNUNG_3_0_2_2026_01_31",
+    "targetSyntax": "UBL",
+    "upgrade": {
+      "diagnosticSha256": "66a1ea9f24a73d9f223eda1ee43f57a083d94b997e6ce66cc26dd9ee65ff0443",
+      "durationMs": 299,
+      "name": "Mustangproject XMLUpgrader",
+      "semanticIntegrity": "NOT_PROVEN_BY_UPGRADER",
+      "sha256": "e4904ffa0afdce3f5836dceb927c440a05ed5d60386fdd37e17a4b2f7652edbf",
+      "sourceGuideline": "urn:ferd:CrossIndustryDocument:invoice:1p0:extended",
+      "sourceProfile": "EXTENDED",
+      "sourceSha256": "89ab6da5fbc19e734c66717eca6bc650f92dbf6d2a3e7571755a969bbfcbfd98",
+      "sourceVersion": "ZUGFeRD 1.0",
+      "status": "APPLIED",
+      "upgradedByteLength": 11224,
+      "upgradedGuideline": "urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended",
+      "upgradedProfile": "EXTENDED",
+      "upgradedSha256": "500f4e834a5b681c46d1702191b7d40a029f1587e06f6ce0e8c9e3cb0be88ac5",
+      "upgradedSyntax": "CII_D16B",
+      "version": "2.24.0"
+    }
+  },
+  "sourceValidation": {
+    "conformanceStatus": "ACCEPTED",
+    "container": null,
+    "counts": {
+      "error": 0,
+      "fatal": 0,
+      "information": 0,
+      "warning": 0
+    },
+    "findings": [],
+    "findingsTruncated": false,
+    "profile": "ZUGFERD_1_EXTENDED"
+  },
+  "artifacts": {
+    "upgradedSourceXml": {
+      "byteLength": 11224,
+      "mediaType": "application/xml",
+      "sha256": "500f4e834a5b681c46d1702191b7d40a029f1587e06f6ce0e8c9e3cb0be88ac5",
+      "storageStatus": "PENDING"
+    }
+  },
+  "error": {
+    "code": "EXTENDED_TERMS_OUTSIDE_TARGET_MODEL",
+    "message": "The EXTENDED source contains semantics that cannot be proven transferable to XRechnung"
+  }
+}

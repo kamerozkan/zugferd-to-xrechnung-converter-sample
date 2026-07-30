@@ -1,0 +1,17 @@
+{
+  "documents": [
+    {
+      "documentId": "local-contract-example",
+      "fileName": "ZUGFeRD1-invoice.xml",
+      "url": "https://raw.githubusercontent.com/ZUGFeRD/mustangproject/87380b8e58624df9efdd9c568f6500d53709c165/library/src/test/resources/migration/input/ZUGFeRD1-invoice.xml"
+    }
+  ],
+  "sourceProfile": "AUTO",
+  "targetSyntax": "UBL",
+  "targetRuleset": "XRECHNUNG_3_0_2_2026_01_31",
+  "overrides": [],
+  "storeConvertedXml": true,
+  "storeExtractedXml": false,
+  "storeTechnicalReports": false,
+  "maxFindingsPerDocument": 20
+}

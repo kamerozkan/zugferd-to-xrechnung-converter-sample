@@ -1,8 +1,8 @@
-> **Release preview:** this Actor is private. These files document the current contract and evidence; they are not a public API availability claim.
+> **Live Actor:** [Run ZUGFeRD to XRechnung Converter on Apify](https://apify.com/kamerozkan/zugferd-to-xrechnung-converter).
 
 # ZUGFeRD to XRechnung Converter: JSON Examples and Schema
 
-[![Apify Actor](https://img.shields.io/badge/Apify-PRIVATE%20HOSTED-BUILD%20PREVIEW-00c7b7?logo=apify)](https://apify.com/kamerozkan)
+[![Apify Actor](https://img.shields.io/badge/Apify-Run%20Actor-00c7b7?logo=apify)](https://apify.com/kamerozkan/zugferd-to-xrechnung-converter)
 ![Build](https://img.shields.io/badge/build-0.0.1%20SUCCEEDED-2f855a)
 ![PPE](https://img.shields.io/badge/document--processed-%240.01-4c1)
 ![Samples](https://img.shields.io/badge/examples-3%20paired%20JSON-2f855a)
@@ -21,12 +21,12 @@ technical discovery.
 |---|---|
 | Actor | `zugferd-to-xrechnung-converter` |
 | Actor ID | `fxxpdIbB0WYcyISTK` |
-| Status | `PRIVATE HOSTED-BUILD PREVIEW` |
+| Status | `PUBLIC STORE LISTING` |
 | Successful build | `0.0.1` |
 | Custom event | `document-processed` |
 | Exact event price | `$0.01` |
 
-The exact source billing contract is $0.01 per evaluated conversion. Platform PPE was not configured at the snapshot.
+The live pay-per-event price is $0.01 per evaluated conversion. An Actor-start charge can also apply; check the Store page for the current maximum charge before a production run.
 
 Local contract examples ran the pinned Mustangproject 2.24.0, phax cii2ubl 3.1.7, and KoSIT XRechnung stack. They are not hosted or live Store results.
 

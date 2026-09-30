@@ -1,0 +1,15 @@
+{
+  "id": "fxxpdIbB0WYcyISTK",
+  "name": "zugferd-to-xrechnung-converter",
+  "title": "ZUGFeRD to XRechnung Converter",
+  "description": "Assess supported ZUGFeRD documents for XRechnung conversion, request missing business terms, and emit target XML only after pinned target validation passes.",
+  "seoTitle": "ZUGFeRD to XRechnung Converter - Factur-X API",
+  "seoDescription": "Convert supported ZUGFeRD and Factur-X invoices to XRechnung XML. Identify missing business terms and deliver target files after pinned validation passes.",
+  "isPublic": true,
+  "url": "https://apify.com/kamerozkan/zugferd-to-xrechnung-converter",
+  "checkedAt": "2026-09-30",
+  "changeScope": "listing metadata and sample documentation only",
+  "runtimeChanged": false,
+  "schemasChanged": false,
+  "examplesRegenerated": false
+}

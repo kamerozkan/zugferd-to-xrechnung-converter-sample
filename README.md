@@ -1,6 +1,10 @@
 > **Live Actor:** [Run ZUGFeRD to XRechnung Converter on Apify](https://apify.com/kamerozkan/zugferd-to-xrechnung-converter).
 
-# ZUGFeRD to XRechnung Converter: JSON Examples and Schema
+# ZUGFeRD to XRechnung Converter: Samples
+
+Assess supported ZUGFeRD documents for XRechnung conversion, request missing business terms, and emit target XML only after pinned target validation passes.
+
+[Run ZUGFeRD to XRechnung Converter on Apify](https://apify.com/kamerozkan/zugferd-to-xrechnung-converter)
 
 [![Apify Actor](https://img.shields.io/badge/Apify-Run%20Actor-00c7b7?logo=apify)](https://apify.com/kamerozkan/zugferd-to-xrechnung-converter)
 ![Build](https://img.shields.io/badge/build-0.0.1%20SUCCEEDED-2f855a)

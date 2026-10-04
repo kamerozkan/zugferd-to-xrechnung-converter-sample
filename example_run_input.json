@@ -1,0 +1,11 @@
+{
+  "documents": [
+    {
+      "documentId": "official-zugferd-sample",
+      "fileName": "zugferd_2p0_EN16931_Einfach.pdf",
+      "url": "https://raw.githubusercontent.com/ZUGFeRD/corpus/master/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Einfach.pdf"
+    }
+  ],
+  "targetSyntax": "UBL",
+  "maxFindingsPerDocument": 20
+}

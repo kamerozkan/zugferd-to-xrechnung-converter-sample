@@ -19,6 +19,22 @@ inputs, three Dataset result rows, and a standalone JSON Schema. It is useful
 for ERP integration design, AP automation, e-invoice testing, and search-driven
 technical discovery.
 
+## Saved API starter on October 4, 2026
+
+[example_run_input.json](example_run_input.json) matches the saved API example body for the observed build `0.0.3`: one public ZUGFeRD EN16931 PDF from the upstream corpus, target syntax `UBL` and at most twenty findings per document. The body passed the deployed input schema and was saved/read back unchanged, replacing an unrelated `helloWorld` placeholder. [Validation and public-fixture retrieval evidence](maintenance-verification-2026-10-04.json).
+
+After setting `APIFY_TOKEN` in your environment and reviewing current pricing/spending limits, this command explicitly starts a potentially billable run:
+
+```bash
+curl -X POST \
+  "https://api.apify.com/v2/acts/kamerozkan~zugferd-to-xrechnung-converter/runs?maxTotalChargeUsd=0.10&timeout=300" \
+  -H "Authorization: Bearer $APIFY_TOKEN" \
+  -H "Content-Type: application/json" \
+  --data-binary @example_run_input.json
+```
+
+The response is run metadata, not converted XML. Wait for completion, then inspect `OUTPUT`, Dataset findings and any emitted target artifact. Missing business terms, unsupported transfer or failed target validation can prevent a converted artifact. The paid-event limit does not cap every account cost. This command was not executed for the repair. The public upstream URL was retrieved and hashed once; that retrieval is not converter validation and its `master` URL is not immutable. Historical local/hosted examples below retain their original dates and evidence class.
+
 ## Verified snapshot
 
 | Field | Value |

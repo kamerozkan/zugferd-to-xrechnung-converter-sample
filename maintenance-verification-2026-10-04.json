@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-04",
+  "actor": "kamerozkan/zugferd-to-xrechnung-converter",
+  "actorId": "fxxpdIbB0WYcyISTK",
+  "scope": "Saved API exampleRunInput metadata and matching public JSON file only",
+  "savedAtUtc": "2026-10-03T23:49:45.297697+00:00",
+  "observedBuildNumber": "0.0.3",
+  "exampleFile": "example_run_input.json",
+  "exampleBodySha256": "75aee762d5957c1ddeb956b3a6fcac603c39df7c17d483168ee63278c23d0c18",
+  "savedReadbackMatches": true,
+  "contentType": "application/json",
+  "schemaValidation": {
+    "jsonschemaVersion": "4.26.0",
+    "validator": "Draft202012Validator",
+    "schemaSha256": "d941d598a63fa41b68b9d2c00c7fdbc7d3c997f82feb356ca5715ebeda634d13",
+    "schemaReferenceCount": 0,
+    "requiredTypeEnumRangeAdditionalPropertiesAndNestedConstraintsValidated": true,
+    "formatCheckerEnabled": true,
+    "beforeErrors": [
+      {
+        "path": [],
+        "rule": "additionalProperties"
+      }
+    ],
+    "afterErrors": []
+  },
+  "sourceProvenance": {
+    "kind": "Already-public deployed input-schema documents.prefill first item",
+    "urlHost": "raw.githubusercontent.com",
+    "documents": 1,
+    "encryptedOrCustomerTaskCopied": false
+  },
+  "publicFixtureRetrievals": [
+    {
+      "url": "https://raw.githubusercontent.com/ZUGFeRD/corpus/master/ZUGFeRDv2/correct/intarsys/EN16931/zugferd_2p0_EN16931_Einfach.pdf",
+      "httpStatus": 200,
+      "bytes": 147759,
+      "sha256": "29842457f57143aba5da78fdf390aba773c965e60b1caab93dfff3e9d4c802f4",
+      "onlyFixtureRetrievalNotActorRun": true
+    }
+  ],
+  "protectedMetadataUnchanged": true,
+  "actorRuntimeChanged": false,
+  "actorBuildChanged": false,
+  "actorInputSchemaChanged": false,
+  "pricingChanged": false,
+  "newActorRuns": 0,
+  "freshUsefulOutputVerified": false,
+  "historicalOutputsRegenerated": false,
+  "limitations": [
+    "Template JSON/schema validation is not Actor output or live source acceptance.",
+    "Workload limits do not cap all account/compute/proxy costs; review pricing and spending limits before starting a run.",
+    "Existing dated output samples retain their original evidence class and collection times."
+  ]
+}
